@@ -23,6 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<td align="center">编号</td>
 			<td align="center">姓名</td>
 			<td align="center">类型</td>
+			<td align="center">带薪年假剩余天数</td>
 			<% 
 				queryUsersImpl a = new queryUsersImpl();
 				ResultSet rs = null;
@@ -41,6 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<td align="center"><%=rs.getString(1) %></td>
 					<td align="center"><%=rs.getString(2) %></td>
 					<td align="center"><%=rs.getString(3) %></td>
+					<td align="center"><%=rs.getString(4) %></td>
 				</tr>
 				
 			<% 
